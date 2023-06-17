@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+    background-image: url("/the_pharmacy/Images/Animation/ani1.jpg");
+    box-sizing: 100%;
+    animation: slide 25s ease-out infinite;
+    border: 2px solid steelblue;
+}
+
+@keyframes slide {
+    25% {
+        background-image: url("/the_pharmacy/Images/Animation/ani2.png");    
+    }
+    50% {
+        background-image: url("/the_pharmacy/Images/Animation/ani3.jpg");
+    }
+    75% {
+        background-image: url("/the_pharmacy/Images/Animation/ani4.jpg");
+        
+    }
+    100% {
+        background-image: url("/the_pharmacy/Images/Animation/ani5.jpg");
+    }
+}

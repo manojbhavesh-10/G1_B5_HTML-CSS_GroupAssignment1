@@ -1,0 +1,55 @@
+.nav-bar {
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+} 
+
+.menu {
+    margin: 0%;
+    background-color: dimgray;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.menu li:hover {
+    background-color: black;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    position: absolute;
+    width: auto;
+    max-width: 150px;
+    display: none;
+    top: 42.5px;
+    background-color: white;
+    padding: 0px;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown li:hover {
+    background-color: #f9f9f9;
+}
+
+.dropdown li a {
+    color: steelblue;
+    font-size: 16px;
+}
+
+
+

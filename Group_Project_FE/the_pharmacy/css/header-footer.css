@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    background-color: rgb(72, 70, 70);
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    padding: 50px;
+
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+}
+
+footer  p{
+    padding: 35px;
+    text-align: center;
+    color: white;
+}
+

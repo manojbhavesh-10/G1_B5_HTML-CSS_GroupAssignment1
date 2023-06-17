@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/the_pharmacy/css/form.css">
+    <title>Lab Test Form</title>
+</head>
+<body>
+    <header><h1 style="color: crimson; text-align: center;">Lab Test Form</h1></header>
+    <div class="lab">
+        <table>
+            <tr>
+                <td class="lab-form">
+                    <form action="/the_pharmacy/index.html">
+                        <div class="main">
+                            <img id="lab-image"  src="/the_pharmacy/Images/Lab-Test/lab-test.jpg" alt="">
+
+                            <div class="contact-address">
+                                <h2>1.Your Contact Details</h2>
+                                <input type="text" placeholder="Full Name">
+                                <input type="text" placeholder="Patient if exist">
+                                <br><br>
+                                <input type="number" placeholder="Contact Number">
+                                <input type="email" placeholder="Email id">
+                                <br><br>
+                                <h2>2.Address</h2>
+                                <input type="text" placeholder="H-No">
+                                <input type="text" placeholder="Street">
+                                <br><br>
+                                <input type="text" placeholder="Area">
+                                <br>
+                            </div>
+                            <b>District: </b>
+                            <select name="district" id="district" required>
+                                <option value="">Choose</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Thiruvallur">Thiruvallur</option>
+                                <option value="Trichy">Trichy</option>
+                                <option value="Vellore">Vellore</option>
+                                <option value="Thiruvannamali">Thiruvannamali</option>
+                                <option value="Madurai">Madurai</option>
+                                <option value="Coimbatore">Coimbatore</option>
+                            </select>
+                            <br><br>
+                            <div class="checkbox">
+                                <h3>3.Test Type</h3>
+                            
+                                <input type="checkbox" value="CBC" id="CBC">
+                                <label for="CBC">CBC</label>
+                                <br>
+                                
+                                <input type="checkbox" value="urine" id="urine">
+                                <label for="urine">Complete Urine</label>
+                                    <br>
+                                
+                                <input type="checkbox" value="lipid" id="lipid">
+                                <label for="lipid">Lipdi Profile</label>
+                                    <br>
+                                
+                                <input type="checkbox" value="TSH" id="TSH">
+                                <label for="TSH">Tyroid Stimulating Hormone</label>
+                                <br>
+                            
+                                <input type="checkbox" value="glucose" id="glucose">
+                                <label for="glucose">Glucose Test</label>
+                                <br>
+                            </div>
+
+                            <div class="radio">
+                                <h3>4. Do you want a hardcopy of the report also?</h3>
+                                <input type="radio" id="yes" name="yes/no" value="yes">
+                                <label for="yes">Yes</label>
+                                <input type="radio" id="no" name="yes/no" value="no">
+                                <label for="no">No</label>
+                            </div>
+
+                            <div class="time">
+                                <h3>5. Select your comfortable Data and Time</h3>
+                                <label for="date">Date: </label>
+                                <input type="date" id="date" name="date" required>
+                                <br><br>
+                                <label for="time">Time: </label>
+                                <input type="time" id="time" name="time" min="06:00" max="20:00" required>
+                            </div>
+                        </div>
+                    </form> 
+                </td>  
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="button">
+        <input type="button" value="Reset">
+        <input type="button" value="Submit">
+    </div>
+</body>
+</html>
